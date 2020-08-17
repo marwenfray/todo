@@ -24,6 +24,7 @@ function App() {
   };
   const rem = (id) => {
     setTask(task.filter((el) => el.id !== id));
+    console.log(id)
   };
   return (
     <div>

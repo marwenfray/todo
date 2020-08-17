@@ -8,8 +8,8 @@ export default function task({task, edit, rem}) {
             <tr>
                 <th scope="row">{el.id+1}</th>
                 <td>{el.text}</td>
-                <td><EditTask id={task.id} edit={edit} oldText={task.text} /></td>
-                <td><button  onClick={() => rem(task.id)}>
+                <td><EditTask id={el.id} edit={edit} oldText={el.text} /></td>
+                <td><button  onClick={() => rem(el.id)}>
         Delete
       </button></td>
             </tr>)}
