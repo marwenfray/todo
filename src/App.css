@@ -1,6 +1,12 @@
 .form-inline{
-  background-color: aqua;
+  background-color: rgb(50, 53, 53);
   width: 100%;
   justify-content: center;
   height: 10em;
+}
+.todo{
+  margin-left: 10%;
+  margin-right: 10%;
+  border-left: 2px solid blue;
+  border-right: 2px solid blue;
 }

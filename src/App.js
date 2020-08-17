@@ -5,11 +5,7 @@ import AddTask from './components/addTask'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
-  const [task, setTask] = useState ([
-    { text: "My First todo", id: 0 },
-    { text: "My Second todo", id: 1 },
-    { text: "My third todo", id: 2 },
-  ])
+  const [task, setTask] = useState ([])
   const add=(text) =>{
     const newTask ={
       text : text,
@@ -27,7 +23,7 @@ function App() {
     console.log(id)
   };
   return (
-    <div>
+    <div className="todo">
     <AddTask add={add}/>
     <Todo task={task}  edit={edit} rem = {rem}/>
     </div>
